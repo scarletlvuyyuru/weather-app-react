@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   font-family: sans-serif;
+  max-width: 1400px;
+  margin: 30px auto;
 }
 
 
@@ -20,5 +22,15 @@
   color: #61dafb;
 }
 
+
+
+body {
+  font-family: arial, sans-serif;
+}
+
+footer {
+  margin: 10px;
+  text-align: center;
+}
 
 

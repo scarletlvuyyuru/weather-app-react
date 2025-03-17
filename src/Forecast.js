@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Search from "./Search";
 import './Forecast.css';
-import App from "./App";
+import App from "./App"
 import axios from "axios";
 
 export default function Forecast(props) {
@@ -17,45 +17,51 @@ export default function Forecast(props) {
         };
         return (
     <div>
+
+
       <div className="Weather">
+      <div> <Search /></div>
         <div className="overview">
           <h1>{weatherData.city}</h1>
         </div>
-        <div className="row">
-          <div className="col-6">
-            <div className="clearfix weather-temperature">
-              <div className="temperature-container">
-                <img
+        
+        
+     
+         
+          
+          <div className="currentInfoContainer">
+    <div className="col">      
+         <img
                   src={weatherData.imgUrl}
                   alt={weatherData.description}
-                  className="weatherIcon"
+                className="weatherIcon"
                 />
-                <span className="temperature-wrapper">
-                  <strong className="temperature">
+                
+    </div>
+    <div> 
+        <span className="displayCurrentTemp">
+                  <strong>
                     {weatherData.temperature}
                   </strong>
                   <span className="units">
-                    <a href="/" className="deg">
+                    <a href="/">
                       °C
                     </a>{" "}
                     |{" "}
-                    <a href="/" className="deg">
+                    <a href="/">
                       °F
                     </a>
                   </span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="col-6">
-            <ul className="details">
+                </span>   </div>
+    <div>   
+        <ul className="items">
               <li>Humidity: {weatherData.humidity}%</li>
               <li>Wind: {weatherData.wind} km/h</li>
-            </ul>
-          </div>
-          <div> <Search /></div>
-     </div>
+        </ul>  
+    </div>
 </div>
+     </div>
+
        
 
         

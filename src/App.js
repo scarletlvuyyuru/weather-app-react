@@ -19,7 +19,7 @@ function App() {
       </header>
       
        <div className="App">
-       <h2>City Info</h2>
+      
      
       <Forecast />
      </div>
