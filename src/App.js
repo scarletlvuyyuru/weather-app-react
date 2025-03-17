@@ -1,4 +1,5 @@
-import weather from "./weather";
+import React from "react";
+import Weather from "./Weather";
 import './App.css';
 
 function App() {
@@ -8,9 +9,9 @@ function App() {
        
         <h1>
           Weather App
-          <weather/>
-        </h1>
         
+        </h1>
+        <Weather />
       </header>
     </div>
   );
