@@ -11,8 +11,9 @@ function App() {
           Weather App
         
         </h1>
-        <Weather />
+      
       </header>
+      <Weather />
     </div>
   );
 }
