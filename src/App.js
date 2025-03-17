@@ -1,8 +1,9 @@
 import React from "react";
+import Forecast from "./Forecast";
+import Search from "./Search";
 
 
 import './App.css';
-import Search from "./Search";
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
       </header>
       
        <div className="App">
-       <h2>Whats your weather?</h2>
-       <Search />
+       <h2>City Info</h2>
+     
+      <Forecast />
      </div>
      </div>
   );
