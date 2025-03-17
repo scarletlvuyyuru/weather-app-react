@@ -1,10 +1,12 @@
 import React from "react";
 import Weather from "./Weather";
 import './App.css';
+import Search from "./Search";
 
 function App() {
   return (
     <div className="App">
+    
       <header className="App-header">
        
         <h1>
@@ -13,8 +15,12 @@ function App() {
         </h1>
       
       </header>
-      <Weather />
-    </div>
+      
+       <div className="App">
+       <h2>Whats your weather?</h2>
+       <Search />
+     </div>
+     </div>
   );
 }
 
