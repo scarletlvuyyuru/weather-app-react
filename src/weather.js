@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 
-export default function Weather(props) {
+export default function weather(props) {
     const [temperature, setTemperature] = useState(null);
   
     function showTemperature(response) {
