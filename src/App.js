@@ -1,6 +1,6 @@
 import React from "react";
 import Forecast from "./Forecast";
-import Search from "./Search";
+
 
 
 import './App.css';
