@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import Search from "./Search";
 import './Forecast.css';
-import App from "./App"
-import axios from "axios";
+
+
 
 export default function Forecast(props) {
     
@@ -20,7 +20,7 @@ export default function Forecast(props) {
 
 
       <div className="Weather">
-      <div> <Search /></div>
+       <Search />
         <div className="overview">
           <h1>{weatherData.city}</h1>
         </div>
